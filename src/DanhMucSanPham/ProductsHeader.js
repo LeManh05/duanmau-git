@@ -4,12 +4,12 @@ import React from "react";
 function ProductsHeader() {
     return ( 
         <div className="productsHeader">
-         <button className="icon-home">
-            <FontAwesomeIcon className="house" icon={faHouse}/>
+         <button className="productsHeader__icon">
+            <FontAwesomeIcon className="productsHeader__house" icon={faHouse}/>
          </button>
-         <button className="Form">
-            <FontAwesomeIcon className ="search" icon={faMagnifyingGlass}/>
-         <input type="search" placeholder="What do you want to find?" className="timkiem"/>
+         <button className="form">
+            <FontAwesomeIcon className ="form__search" icon={faMagnifyingGlass}/>
+         <input type="search" placeholder="What do you want to find?" className="form__timkiem"/>
          </button>
         </div>
      );

@@ -15,21 +15,21 @@ const Category = () => {
 
   return (
     <div>
-      <div className="categories-list">
+      <div className="categories__list">
         {categories.map((category) => (
           <div key={category.id}>
             <button
-              className="category-btn"
+              className="category__btn"
               onClick={() => handleCategoryClick(category)}
             >
               {category['item-type']}
             </button>
 
             {selectedCategory && selectedCategory.id === category.id && (
-              <div className="products-list">
+              <div className="products__list">
                 {category.products.map((product) => (
                   <div key={product.id} className="product">
-                    <img src={product.image_url} alt={product.name} className="product-image"/>
+                    <img src={product.image_url} alt={product.name} className="product__image" loading="lazy"/>
                     <h3>{product.name}</h3>
                     <p>{product.ta_price}</p>
                   </div>
