@@ -34,18 +34,31 @@
     background-color: #ccc;
     border-radius: 10px;
   }
-  .product {
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 10px 0px;
-    text-align: center;
+  .categories__list{
+    position: fixed;
+            left: 0 ;
+            width: 100%;
+            top: 50px;
+  }
+  .products{
+    margin-top: 100px;
   }
   .products__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+  .products__item{
+    padding: 20px 0px;
   
-  .product__image {
+  }
+  .products__card{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .products__image {
     width: 100%;
     border-radius: 10px;
     height: 150px;

@@ -1,6 +1,14 @@
 .productsHeader{
-padding: 10px;
+    position: fixed;
+    top: 0px;
+    left: 1px;
+    width: 100%;
+    height: 52px;
 display: flex;
+z-index: 1000;
+width: 100%;
+background-color: white;
+padding: 8px 10px;
 }
 .productsHeader__icon{
     width: 36px;

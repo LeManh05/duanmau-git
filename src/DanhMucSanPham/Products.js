@@ -4,12 +4,13 @@ import { faCircle, faCircleXmark, house } from '@fortawesome/free-solid-svg-icon
 import ProductsHeader from './ProductsHeader';
 import './Products.css';
 import CategoryMenu from "./CategoryMenu";
-import MenuList from "./MenuList";
+import Product from "./Product";
 function Products() {
     return ( 
         <div className="products">
         <ProductsHeader/>
         <CategoryMenu/>
+        <Product/>
         </div>
      );
 }

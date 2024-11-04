@@ -1,46 +1,41 @@
 import React, { useState } from 'react';
 import './CategoryMenu.css';
-import { categories } from './MenuList';
-import MenuList from './MenuList';
+import { data_items } from './data/items';
 import { type } from '@testing-library/user-event/dist/type';
-const Category = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const handleCategoryClick = (category) => {
-    if (selectedCategory && selectedCategory.item-type === category.id) {
-      setSelectedCategory(null); 
-    } else {
-      setSelectedCategory(category);
+const Category = () =>{
+    const handleCategoryClick = (category) => {
+      const filterItemsByType = (type_id) => {
+        const filteredItems = data_items.items.filter(item => item.type_id === type_id);
+        console.log (filteredItems)
+      }
+    };
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" 
+      });
+    };
+    const handleClickAndScroll = () => {
+      handleCategoryClick(category.type_id);
+      scrollToTop();
     }
-  };
-
+    const category = data_items.item_types;
   return (
-    <div>
       <div className="categories__list">
-        {categories.map((category) => (
-          <div key={category.id}>
+        {category.map((category) => (
+          <div key={category.text_id}>
             <button
               className="category__btn"
-              onClick={() => handleCategoryClick(category)}
+              onClick={handleClickAndScroll}           
             >
-              {category['item-type']}
-            </button>
-
-            {selectedCategory && selectedCategory.id === category.id && (
-              <div className="products__list">
-                {category.products.map((product) => (
-                  <div key={product.id} className="product">
-                    <img src={product.image_url} alt={product.name} className="product__image" loading="lazy"/>
-                    <h3>{product.name}</h3>
-                    <p>{product.ta_price}</p>
-                  </div>
-                ))}
-              </div>
-            )}
+              {category.name}
+            </button>     
           </div>
         ))}
       </div>
-    </div>
-  );
-};
+  )
+}
+  
+// }
 
 export default Category;

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
+import './Products.css';
 function ProductsHeader() {
     return ( 
         <div className="productsHeader">
