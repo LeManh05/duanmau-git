@@ -20,6 +20,7 @@
     cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+    flex-wrap: wrap;
     &:focus{
       background-color: var(--secondary-color);
       color: var(--primary-color);
@@ -47,15 +48,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  .products__item{
-    padding: 20px 0px;
-  
-  }
   .products__card{
     border: 1px solid #eee;
     border-radius: 10px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
+    margin: 20px 5px;
   }
   
   .products__image {

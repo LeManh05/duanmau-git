@@ -1,3 +1,4 @@
+import Trangchu from './Login/Trangchu';
 import Header from './component/Header';
 import Banner from './component/Banner';
 import Content from './component/Content';
@@ -13,7 +14,7 @@ import { faCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 function App(){
   return (
   <div className="App">
-  <Products/>
+   <Products/>
   </div>
   );
 }
