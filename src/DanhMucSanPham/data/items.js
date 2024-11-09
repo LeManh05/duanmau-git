@@ -134,7 +134,7 @@
       },
       {
         "id": 22739001,
-        "name": "Set yếm kèm phụ kiện cầm tay và cài đầu",
+        "name": "Set yếm kèm phụ kiện cầm tay",
         "ta_price": 70000.0,
         "ots_price": 70000.0,
         "sort": 1000,
@@ -156,7 +156,7 @@
       },
       {
         "id": 22738998,
-        "name": "Áo dài kèm phụ kiện cầm tay và cài đầu",
+        "name": "Áo dài ",
         "ta_price": 70000.0,
         "ots_price": 70000.0,
         "sort": 1000,
@@ -244,7 +244,7 @@
       },
       {
         "id": 19107566,
-        "name": "Bó hoa chụp hình size to mẫu 1",
+        "name": "Bó hoa chụp hình size to ",
         "ta_price": 50000.0,
         "ots_price": 50000.0,
         "sort": 1000,
@@ -398,7 +398,7 @@
       },
       {
         "id": 18290172,
-        "name": "QUÉT MÃ ĐỂ XEM TOÀN BỘ TRANG PHỤC",
+        "name": "QUÉT MÃ TRANG PHỤC",
         "ta_price": 0.0,
         "ots_price": 0.0,
         "sort": 0,
@@ -442,7 +442,7 @@
       },
       {
         "id": 18219620,
-        "name": "Cổ phục kèm phụ kiện cầm tay và cài đầu",
+        "name": "Cổ phục ",
         "ta_price": 70000.0,
         "ots_price": 70000.0,
         "sort": 1000,

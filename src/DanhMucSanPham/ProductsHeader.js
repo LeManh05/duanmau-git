@@ -3,7 +3,7 @@ import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 import './Products.css';
 function ProductsHeader() {
-    return ( 
+    return (         
         <div className="productsHeader">
          <button className="productsHeader__icon">
             <FontAwesomeIcon className="productsHeader__house" icon={faHouse}/>
