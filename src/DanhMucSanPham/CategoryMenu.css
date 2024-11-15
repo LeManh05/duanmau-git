@@ -40,6 +40,7 @@
             left: 0 ;
             width: 100%;
             top: 50px;
+    z-index: 1000;
   }
   .products{
     margin-top: 100px;
@@ -47,31 +48,52 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 130px;
+    margin-bottom: 40px;
   }
   .products__card{
-    border: 1px solid #eee;
+    position: relative;
+    background-color: #fff;
     border-radius: 10px;
-    text-align: center;
-    padding: 10px 10px;
-    margin: 20px 5px;
+    margin: 5px 4px;
+    box-shadow: 0 0 15px rgba(45, 45, 48, .1);
+    animation-name: slide-to-left;
+    animation-duration: .3s;
+    z-index: 1;
   }
   
   .products__image {
     width: 100%;
-    border-radius: 10px;
-    height: 150px;
+    height: calc(50vw - 30px);
     object-fit: cover;
+    border-radius: 10px;
   }
   
   h3 {
-    margin-top: 10px;
     color: #363636;
     font-size: 15px;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-family: BlinkMacSystemFont, -apple-system, 'Opens Sans', Helvetica Neue, Helvetica, Fira Sans, Noto, Droid Sans, Cantarell, Oxygen, Ubuntu, Franklin Gothic Medium, Century Gothic, Liberation Sans, sans-serif;
+    padding: 5px 5px 5px ;
   }
   
-  p {
+  .price {
     color:var(--secondary-color);
     font-weight: bold;
+    padding: 0px 8px 5px ;
   }
+ .add{
+  position: absolute;
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50vh;
+    bottom: 5px;
+    right: 5px;
+    color: #f6a749;
+ }
   

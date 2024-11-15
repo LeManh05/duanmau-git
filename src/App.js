@@ -9,8 +9,6 @@ import Footer from './component/Footer';
 import Products from './DanhMucSanPham/Products';
 import React from 'react';
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 function App(){
   return (
   <div className="App">

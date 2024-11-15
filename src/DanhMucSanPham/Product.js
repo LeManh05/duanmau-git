@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import data_items from "./data/items";
 import CategoryMenu from "./CategoryMenu";
 import "./CategoryMenu.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 const product = data_items.items;
 const Product = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -30,7 +32,8 @@ const Product = () => {
                   loading="lazy"
                 />
                 <h3>{product.name}</h3>
-                <p>{product.ta_price} đ</p>
+                <p className="price">{product.ta_price} đ</p>
+                <FontAwesomeIcon className="add" icon ={faCirclePlus }/>
               </div>
             </div>
           ))}
